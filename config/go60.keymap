@@ -417,21 +417,6 @@
 /* Automatically generated combos definitions */
 
 
-/* Set RGB color on startup */
-/ {
-    behaviors {
-        startup: startup {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(0,0,10)>;
-        };
-    };
-};
-
-&kscan {
-    startup-behavior = <&startup>;
-};
-
 /* Automatically generated keymap */
 / {
     keymap {
