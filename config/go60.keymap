@@ -206,22 +206,22 @@
         rgb_base: rgb_base {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(0,0,20)>;
+            bindings = <&rgb_ug RGB_COLOR_HSB(0,0,10)>;
         };
         rgb_number: rgb_number {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(220,100,20)>;
+            bindings = <&rgb_ug RGB_COLOR_HSB(220,100,10)>;
         };
         rgb_game: rgb_game {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(180,100,20)>;
+            bindings = <&rgb_ug RGB_COLOR_HSB(180,100,10)>;
         };
         rgb_magic: rgb_magic {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&rgb_ug RGB_COLOR_HSB(270,100,20)>;
+            bindings = <&rgb_ug RGB_COLOR_HSB(270,100,10)>;
         };
 
         /* Layer switch + set color macros */
