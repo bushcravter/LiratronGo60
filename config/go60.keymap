@@ -469,10 +469,10 @@
 
         layer_Game_Colemak {
             bindings = <
- &trans  &trans  &trans  &trans  &trans  &trans                                                                         &kp COMMA  &kp LS(RBKT)  &kp MINUS     &trans  &trans    &trans
- &trans  &trans  &trans  &trans  &trans  &trans                                                                     &kp LA(LG(J))        &trans     &trans     &trans  &trans   &kp TAB
- &trans  &trans  &trans  &trans  &trans   &kp G                                                                     &kp LA(LG(M))        &trans     &trans     &trans  &trans  &kp LALT
- &trans  &trans  &trans  &trans  &trans   &kp V                                                                            &trans        &trans     &kp UP     &trans  &trans     &to_base
+ &kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                                                                         &kp COMMA  &kp LS(RBKT)  &kp MINUS  &kp N9  &kp N0    &kp BSPC
+ &kp TAB   &kp Q   &kp W   &kp F   &kp P   &kp B                                                                     &kp LA(LG(J))         &kp L      &kp U   &kp Y  &kp SEMI   &kp TAB
+ &kp LSHFT   &kp A   &kp R   &kp S   &kp T   &kp G                                                                     &kp LA(LG(M))         &kp N      &kp E   &kp I   &kp O  &kp LALT
+ &kp CAPS   &kp Z   &kp X   &kp C   &kp D   &kp V                                                                            &kp K         &kp H     &kp UP  &kp DOT  &kp SQT     &to_base
                  &kp N6  &kp N7  &kp N8                                                                                                &kp LEFT   &kp DOWN  &kp RIGHT
                                                  &kp LCTRL  &kp SPACE  &kp LS(N1)  &kp LS(LBKT)  &kp RET  &kp LGUI
             >;
