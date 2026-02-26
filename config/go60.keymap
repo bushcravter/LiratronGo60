@@ -432,7 +432,7 @@
  &kp LSHFT   &TapLayerHold LAYER_Mouse A      &TapLayerHold LAYER_Symbol_2 R  &TapLayerHold LAYER_Arrow S                        &TapLayerHold LAYER_Symbol_1 T  &BalancedModTap LA(LS(LG(LCTRL))) G                                                                                            &BalancedModTap LA(LS(LG(LCTRL))) M      &TapLayerHold LAYER_Symbol_1 N  &TapLayerHold LAYER_Arrow E                   &TapLayerHold LAYER_Symbol_2 I     &kp O      &kp LS(SEMI)
   &kp CAPS   &kp Z      &kp X                        &kp C  &kp D      &kp V                                                                                                &kp K      &kp H                    &kp COMMA                 &kp DOT   &kp SQT  &none
                         &none                    &mkp RCLK                    &mkp LCLK                                                                                                                                                                      &kp LSHFT                        &none  &none
-                                                                                                                              &mt LCTRL RET  &mt LGUI ESC  &mo LAYER_Symbol_1  &mo LAYER_Symbol_2  &kp BSPC  &mt LSHFT SPACE
+                                                                                                                              &BalancedModTap LCTRL RET  &BalancedModTap LGUI ESC  &mo LAYER_Symbol_1  &mo LAYER_Symbol_2  &kp BSPC  &BalancedModTap LSHFT SPACE
             >;
         };
 
