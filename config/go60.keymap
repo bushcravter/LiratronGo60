@@ -402,6 +402,7 @@
             require-prior-idle-ms = <150>;
             bindings = <&mo>, <&kp>;
             flavor = "balanced";
+            quick-release;
         };
 
         // Home row tap
@@ -412,6 +413,7 @@
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
             flavor = "balanced";
+            quick-release;
         };
     };
 };
