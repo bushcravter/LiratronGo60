@@ -10,6 +10,7 @@ ZMK firmware configuration for the [MoErgo Go60](https://moergo.com/go60-support
 |---|---|
 | `config/go60.keymap` | Keymap and layers (devicetree format) |
 | `config/go60.conf` | Kconfig settings (RGB, power, features) |
+| `config/info.json` | Physical key layout definition (used by layout editors — do not edit) |
 | `config/default.nix` | Nix build expression — builds left + right halves and combines into one UF2 |
 | `.github/workflows/build.yml` | CI — builds firmware on push via GitHub Actions |
 
@@ -18,7 +19,7 @@ ZMK firmware configuration for the [MoErgo Go60](https://moergo.com/go60-support
 Firmware is built via Nix, not Brazil. Two options:
 
 1. **GitHub Actions** (primary): push to repo → Actions builds → download `go60.uf2` from artifacts
-2. **Local Docker**: `./build.sh` (requires Docker)
+2. **Local Docker**: `./build.sh` (Linux/macOS) or `build.bat` (Windows) — requires Docker
 
 Do NOT use `brazil-build` — this is not a Brazil package.
 
