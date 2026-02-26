@@ -186,7 +186,7 @@
 
 /* Input Listeners */
 &cirque_rh_listener {
-    input-processors = <&zip_xy_scaler 7 2>;
+    input-processors = <&zip_xy_scaler 19 5>;
 };
 
 &cirque_lh_listener {
