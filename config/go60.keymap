@@ -404,6 +404,30 @@
             flavor = "balanced";
         };
 
+        TapLayerHoldL: TapLayerHoldL {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <125>;
+            quick-tap-ms = <175>;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMB_KEYS>;
+            hold-trigger-on-release;
+        };
+
+        TapLayerHoldR: TapLayerHoldR {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <280>;
+            require-prior-idle-ms = <125>;
+            quick-tap-ms = <175>;
+            bindings = <&mo>, <&kp>;
+            hold-trigger-key-positions = <LEFT_HAND_KEYS THUMB_KEYS>;
+            hold-trigger-on-release;
+        };
+
         // Home row tap
         BalancedModTap: BalancedModTap {
             compatible = "zmk,behavior-hold-tap";
@@ -429,7 +453,7 @@
             bindings = <
    &kp ESC  &kp N1     &kp N2                       &kp N3                       &kp N4                               &kp N5                                                                                                                         &kp N6     &kp N7                       &kp N8                  &kp N9    &kp N0          &to_number
    &kp TAB   &BalancedModTap LS(LA(LCTRL)) Q      &BalancedModTap LALT W                        &kp F                        &kp P                                &kp B                                                                                                                          &kp J                        &kp L                        &kp U  &BalancedModTap LALT Y  &BalancedModTap LS(LA(LCTRL)) SEMI           &kp BSPC
- &kp LSHFT   &TapLayerHold LAYER_Mouse A      &TapLayerHold LAYER_Symbol_2 R  &TapLayerHold LAYER_Arrow S                        &TapLayerHold LAYER_Symbol_1 T  &BalancedModTap LA(LS(LG(LCTRL))) G                                                                                            &BalancedModTap LA(LS(LG(LCTRL))) M      &TapLayerHold LAYER_Symbol_1 N  &TapLayerHold LAYER_Arrow E                   &TapLayerHold LAYER_Symbol_2 I     &kp O      &kp LS(SEMI)
+ &kp LSHFT   &TapLayerHold LAYER_Mouse A      &TapLayerHoldL LAYER_Symbol_2 R  &TapLayerHold LAYER_Arrow S                        &TapLayerHoldL LAYER_Symbol_1 T  &BalancedModTap LA(LS(LG(LCTRL))) G                                                                                            &BalancedModTap LA(LS(LG(LCTRL))) M      &TapLayerHoldR LAYER_Symbol_1 N  &TapLayerHold LAYER_Arrow E                   &TapLayerHoldR LAYER_Symbol_2 I     &kp O      &kp LS(SEMI)
   &kp CAPS   &kp Z      &kp X                        &kp C  &kp D      &kp V                                                                                                &kp K      &kp H                    &kp COMMA                 &kp DOT   &kp SQT  &none
                         &none                    &mkp RCLK                    &mkp LCLK                                                                                                                                                                      &kp LSHFT                        &none  &none
                                                                                                                               &mt LCTRL RET  &mt LGUI ESC  &mo LAYER_Symbol_1  &mo LAYER_Symbol_2  &kp BSPC  &BalancedModTap LSHFT SPACE
