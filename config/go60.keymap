@@ -428,6 +428,15 @@
             hold-trigger-on-release;
         };
 
+        SpaceModTap: SpaceModTap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <100>;
+            bindings = <&kp>, <&kp>;
+            flavor = "balanced";
+        };
+
         // Home row tap
         BalancedModTap: BalancedModTap {
             compatible = "zmk,behavior-hold-tap";
@@ -456,7 +465,7 @@
  &kp LSHFT   &TapLayerHold LAYER_Mouse A      &TapLayerHoldL LAYER_Symbol_2 R  &TapLayerHold LAYER_Arrow S                        &TapLayerHoldL LAYER_Symbol_1 T  &BalancedModTap LA(LS(LG(LCTRL))) G                                                                                            &BalancedModTap LA(LS(LG(LCTRL))) M      &TapLayerHoldR LAYER_Symbol_1 N  &TapLayerHold LAYER_Arrow E                   &TapLayerHoldR LAYER_Symbol_2 I     &kp O      &kp LS(SEMI)
   &kp CAPS   &kp Z      &kp X                        &kp C  &kp D      &kp V                                                                                                &kp K      &kp H                    &kp COMMA                 &kp DOT   &kp SQT  &none
                         &none                    &mkp RCLK                    &mkp LCLK                                                                                                                                                                      &kp LSHFT                        &none  &none
-                                                                                                                              &mt LCTRL RET  &mt LGUI ESC  &mo LAYER_Symbol_1  &mo LAYER_Symbol_2  &kp BSPC  &BalancedModTap LSHFT SPACE
+                                                                                                                              &mt LCTRL RET  &mt LGUI ESC  &mo LAYER_Symbol_1  &mo LAYER_Symbol_2  &kp BSPC  &SpaceModTap LSHFT SPACE
             >;
         };
 
