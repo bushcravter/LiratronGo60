@@ -121,7 +121,8 @@
 #define LAYER_Lower 0
 
 #endif 
-{
+
+&glidepoint {
     /
 
     input_processors {
