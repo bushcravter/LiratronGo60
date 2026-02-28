@@ -353,7 +353,7 @@ endif {
     /* Automatically generated behavior definitions */
 
     / {
-        comma_semicoloncomma_semicolon: behaviors {
+        comma_semicolon: comma_semicolon {
             // Home row tapcomma_semicolon: comma_semicolon {
 
             compatible = "zmk,behavior-mod-morph";
