@@ -117,14 +117,10 @@
 #define LAYER_Mouse 7
 
 #ifndef LAYER_Lower
-
 #define LAYER_Lower 0
-
 #endif 
 
 &glidepoint {
-    /
-
     input_processors {
         zip_click_to_right_click_mapper: zip_click_to_right_click_mapper {
             compatible = "zmk,input-processor-code-mapper";
